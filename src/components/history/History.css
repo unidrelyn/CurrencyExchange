@@ -1,0 +1,22 @@
+:root {
+	--primary: #009688;
+	--accent: #94c720;
+	--warn: #c70d38;
+	--text: #404040;
+	--headerText: #8d8d8d;
+}
+
+.containerHistory {
+	background: rgb(224, 222, 222);
+	padding: 10px 0 10px 0;
+}
+
+.titleHistory {
+	text-align: left;
+	margin: 10px 0 10px 40px;
+	color: var(--text);
+}
+
+.labelHistory {
+	margin: 2px 0 2px 40px;
+}

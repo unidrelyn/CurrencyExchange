@@ -1,0 +1,19 @@
+:root {
+	--primary: #009688;
+	--accent: #94c720;
+	--warn: #c70d38;
+	--text: #404040;
+	--headerText: #8d8d8d;
+}
+
+.containerHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.selectHeader {
+	text-decoration: none;
+	color: var(--text);
+	font-size: 16px;
+}

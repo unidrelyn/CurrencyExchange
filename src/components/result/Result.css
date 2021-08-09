@@ -1,0 +1,24 @@
+:root {
+	--primary: #009688;
+	--accent: #94c720;
+	--warn: #c70d38;
+	--text: #404040;
+	--headerText: #8d8d8d;
+}
+
+.containerResult {
+	background: rgb(224, 222, 222);
+	padding: 10px 0 10px 0;
+	border-bottom: groove;
+}
+
+.firstValue {
+	font-size: 40px;
+	color: var(--text);
+}
+
+.secondValue {
+	font-size: 40px;
+	color: var(--warn);
+	font-weight: bold;
+}

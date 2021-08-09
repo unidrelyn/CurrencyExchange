@@ -1,0 +1,58 @@
+:root {
+	--primary: #009688;
+	--accent: #94c720;
+	--warn: #c70d38;
+	--text: #404040;
+	--headerText: #8d8d8d;
+}
+
+.container {
+	background: rgb(224, 222, 222);
+	padding: 10px 0 10px 0;
+}
+
+.titleConvert {
+	text-align: left;
+	font-size: 48px;
+	margin: 10px 0 30px 40px;
+	color: var(--text);
+}
+.formConvert {
+	display: flex;
+
+	justify-content: space-around;
+}
+
+.labelConvert {
+	font-size: 12px;
+}
+
+.inputConvert {
+	border: none;
+	border-bottom: 3px solid lightgray;
+	background-color: rgb(224, 222, 222);
+	font-weight: bold;
+	color: var(--text);
+}
+.arrow {
+	background: white;
+	border-radius: 5px;
+	box-shadow: 2px 2px grey;
+	border: none;
+}
+
+.styleInput {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.buttonConvert {
+	background: gray;
+	border-radius: 5px;
+	box-shadow: 2px 2px lightgray;
+	border: none;
+	color: white;
+	padding: 0 10px 0 10px;
+	font-size: 12px;
+}
