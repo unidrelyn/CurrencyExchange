@@ -9,6 +9,7 @@
 .container {
 	background: rgb(224, 222, 222);
 	padding: 10px 0 10px 0;
+	height: 200px;
 }
 
 .titleConvert {
@@ -25,6 +26,8 @@
 
 .labelConvert {
 	font-size: 12px;
+	margin-bottom: 5px;
+	font-weight: lighter;
 }
 
 .inputConvert {
@@ -33,6 +36,7 @@
 	background-color: rgb(224, 222, 222);
 	font-weight: bold;
 	color: var(--text);
+	width: 150px;
 }
 .arrow {
 	background: white;
@@ -48,7 +52,7 @@
 }
 
 .buttonConvert {
-	background: gray;
+	background: var(--primary);
 	border-radius: 5px;
 	box-shadow: 2px 2px lightgray;
 	border: none;

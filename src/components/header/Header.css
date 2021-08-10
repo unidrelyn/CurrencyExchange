@@ -15,5 +15,12 @@
 .selectHeader {
 	text-decoration: none;
 	color: var(--text);
-	font-size: 16px;
+	font-size: 14px;
+	margin: 0 20px;
+	text-transform: uppercase;
+}
+
+.is-active {
+	border-bottom: 2px solid var(--primary);
+	padding-bottom: 7px;
 }

@@ -19,4 +19,18 @@
 
 .labelHistory {
 	margin: 2px 0 2px 40px;
+	width: 160px;
+	text-align: initial;
+}
+
+.tableHistory {
+	background: white;
+	margin: 10px 0 2px 40px;
+	padding: 10px;
+	box-shadow: 3px 2px 5px grey;
+	width: 50%;
+	margin-bottom: 50px;
+}
+.lineTable {
+	margin: 2px;
 }

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./History.css";
 
+import Chart from "../Chart/Chart";
 import DataHistory from "../dataHistory/DataHistory";
+
+import "./History.css";
 
 function History({ fromCurrency, resultConvert }) {
 	const [newDate, setNewDate] = useState(new Date());
@@ -16,6 +18,9 @@ function History({ fromCurrency, resultConvert }) {
 			.then((data) => {
 				setData(data);
 			});
+		if (data.length === 0) {
+			historyDate("7");
+		}
 	}, [resultConvert, newDate]);
 
 	function historyDate(e) {
@@ -41,11 +46,6 @@ function History({ fromCurrency, resultConvert }) {
 				break;
 		}
 	}
-	const option = [
-		{ value: "7", label: 7 },
-		{ value: "14", label: 14 },
-		{ value: "30", label: 30 },
-	];
 
 	return (
 		<div className="containerHistory">
@@ -62,10 +62,16 @@ function History({ fromCurrency, resultConvert }) {
 				</select>
 			</div>
 			<div>
-				<h2>Date ExchangeDate</h2>
-				{data.map((item) => (
-					<DataHistory item={item} key={item.timestamp} />
-				))}
+				<table className="tableHistory">
+					<tr className="lineTable">
+						<th>Date</th>
+						<th>ExchangeDate</th>
+					</tr>
+					{data.map((item) => (
+						<DataHistory item={item} key={item.timestamp} />
+					))}
+				</table>
+				{data.length !== 0 ? <Chart data={data} /> : ""}
 			</div>
 		</div>
 	);

@@ -9,6 +9,8 @@ function Result({
 	baseTo,
 	resultConvert,
 }) {
+	const change1 = baseFrom / baseTo;
+	const change2 = baseTo / baseFrom;
 	return (
 		<div className="containerResult">
 			<p>
@@ -19,6 +21,12 @@ function Result({
 				<span className="secondValue">
 					{resultConvert} {toCurrency}
 				</span>
+			</p>
+			<p>
+				1 {fromCurrency} = {change1} {toCurrency}
+			</p>
+			<p>
+				1 {toCurrency} = {change2} {fromCurrency}
 			</p>
 		</div>
 	);

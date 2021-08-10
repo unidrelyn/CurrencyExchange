@@ -1,0 +1,52 @@
+:root {
+	--primary: #009688;
+	--accent: #94c720;
+	--warn: #c70d38;
+	--text: #404040;
+	--headerText: #8d8d8d;
+}
+
+.containerConversion {
+	background: rgb(224, 222, 222);
+	padding: 10px 0 10px 0;
+	height: 400px;
+}
+
+.titleConversion {
+	text-align: initial;
+	margin: 10px 20px 20px 50px;
+	color: var(--text);
+	font-weight: bold;
+}
+
+.tableConvert {
+	width: 90%;
+	text-align: justify;
+	margin: auto;
+	color: var(--text);
+	font-weight: lighter;
+}
+
+svg.view {
+	margin-right: 5px;
+}
+
+.view {
+	color: var(--primary);
+}
+
+.viewLink,
+.deleteLink {
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: end;
+}
+
+.deleteLink {
+	margin-left: 20px;
+}
+
+.delete {
+	color: var(--warn);
+}

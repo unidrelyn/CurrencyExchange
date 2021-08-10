@@ -19,6 +19,6 @@
 
 .secondValue {
 	font-size: 40px;
-	color: var(--warn);
+	color: var(--accent);
 	font-weight: bold;
 }

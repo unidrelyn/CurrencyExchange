@@ -5,9 +5,10 @@ function DataHistory({ item }) {
 	const newDate = new Date(timestamp).toLocaleDateString();
 
 	return (
-		<div>
-			{newDate} {rate}
-		</div>
+		<tr className="lineTable">
+			<td>{newDate} </td>
+			<td>{rate}</td>
+		</tr>
 	);
 }
 
